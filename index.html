@@ -4,13 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
+    <!-- CHANGED TITLE -->
+    <title>Saad Asif | Unity Game Developer</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
   <body>
+    <!-- CHANGED NAVIGATION NAME -->
     <nav id="desktop-nav">
-      <div class="logo">John Doe</div>
+      <div class="logo">Saad Asif</div>
       <div>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
@@ -21,7 +23,7 @@
       </div>
     </nav>
     <nav id="hamburger-nav">
-      <div class="logo">John Doe</div>
+      <div class="logo">Saad Asif</div>
       <div class="hamburger-menu">
         <div class="hamburger-icon" onclick="toggleMenu()">
           <span></span>
@@ -36,18 +38,21 @@
         </div>
       </div>
     </nav>
+    <!-- UPDATED PROFILE SECTION -->
     <section id="profile">
       <div class="section__pic-container">
-        <img src="./assets/profile-pic.png" alt="John Doe profile picture" />
+        <img src="./assets/profile-pic.png" alt="Saad Asif profile picture" />
       </div>
       <div class="section__text">
         <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">John Doe</h1>
-        <p class="section__text__p2">Frontend Developer</p>
+        <h1 class="title">Saad Asif</h1>
+        <!-- CHANGED JOB TITLE -->
+        <p class="section__text__p2">Unity Game Developer</p>
         <div class="btn-container">
+          <!-- CHANGED RESUME FILE -->
           <button
             class="btn btn-color-2"
-            onclick="window.open('./assets/resume-example.pdf')"
+            onclick="window.open('./assets/SaadAsifResume.pdf')"
           >
             Download CV
           </button>
@@ -55,194 +60,144 @@
             Contact Info
           </button>
         </div>
+        <!-- UPDATED SOCIAL LINKS -->
         <div id="socials-container">
           <img
             src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
+            alt="LinkedIn"
             class="icon"
-            onclick="location.href='https://linkedin.com/'"
+            onclick="location.href='https://www.linkedin.com/in/saad-asif-a710571b6/'"
           />
           <img
             src="./assets/github.png"
-            alt="My Github profile"
+            alt="Github"
             class="icon"
-            onclick="location.href='https://github.com/'"
+            onclick="location.href='https://github.com/saad20asif'"
           />
         </div>
       </div>
     </section>
+    <!-- UPDATED ABOUT SECTION -->
     <section id="about">
       <p class="section__text__p1">Get To Know More</p>
       <h1 class="title">About Me</h1>
       <div class="section-container">
-        <div class="section__pic-container">
+        <!-- <div class="section__pic-container">
           <img
             src="./assets/about-pic.png"
-            alt="Profile picture"
+            alt="Saad Asif"
             class="about-pic"
           />
-        </div>
+        </div> -->
         <div class="about-details-container">
           <div class="about-containers">
+            <!-- UPDATED EXPERIENCE -->
             <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
+              <img src="./assets/experience.png" class="icon" />
               <h3>Experience</h3>
-              <p>2+ years <br />Frontend Development</p>
+              <p>4+ years<br />Game Development</p>
             </div>
+            <!-- UPDATED EDUCATION -->
             <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
+              <img src="./assets/education.png" class="icon" />
               <h3>Education</h3>
-              <p>B.Sc. Bachelors Degree<br />M.Sc. Masters Degree</p>
+              <p>B.Sc. Computer Science<br />University of Central Punjab</p>
             </div>
           </div>
+          <!-- ADDED ABOUT ME TEXT FROM RESUME -->
           <div class="text-container">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis
-              reprehenderit et laborum, rem, dolore eum quod voluptate
-              exercitationem nobis, nihil esse debitis maxime facere minus sint
-              delectus velit in eos quo officiis explicabo deleniti dignissimos.
-              Eligendi illum libero dolorum cum laboriosam corrupti quidem,
-              reiciendis ea magnam? Nulla, impedit fuga!
+              Let’s be real – I used to think coding was so boring. Back in my computer science days, I’d stare at dry algorithms and think, “Why does this feel like solving tax forms instead of creating magic?”
+
+Then I discovered game dev.
+
+Suddenly, physics wasn’t just equations – it was ragdolls flying gloriously after a grenade blast. Math became enemy AI pathfinding that actually made me yell “OH YOU SNEAKY BOT!” at my screen. Even art clicked – I finally understood why shading a 3D model feels like giving it a soul.
+
+Now? I’m that weirdo who gets genuinely hyped about:
+🔥 Architecting systems so clean they make other devs do chef’s kisses
+💡 Problem-solving where “impossible” bugs become “hold my energy drink” challenges
+🎮 Game feel tweaks – you haven’t lived until you’ve spent 4 hours perfecting a single jump animation’s squash/stretch
+
+My superpower? Falling into flow states where:
+⏳ 8 hours vanish like 20 minutes
+🧠 Every line of code feels like brushing paint onto a masterpiece
+❤️ My heart does little fireworks when players go “WAIT HOW’D YOU DO THAT?!”
+
+The best part? I’m still that kid who:
+🚀 Dreams about games that make people forget to check their phones
+🤝 LOVES collaborating with artists who “get” that a good death sound effect is 40% of combat satisfaction
+🌱 Treats every project like a playground for wild ideas (yes, even hyper-casual games deserve soul)
+
+Let’s make something that’s more than a game – something that gives players that electric “I NEED to show this to someone” feeling. Bonus points if we geek out about:
+• How particle systems are basically digital witchcraft
+• Why playtesting feels like hosting the world’s most chaotic focus group
+• The art of making UI sing instead of just… existing
             </p>
           </div>
         </div>
       </div>
       <img
         src="./assets/arrow.png"
-        alt="Arrow icon"
         class="icon arrow"
         onclick="location.href='./#experience'"
       />
     </section>
+    <!-- UPDATED EXPERIENCE SECTION -->
     <section id="experience">
       <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Experience</h1>
+      <h1 class="title">Skills & Expertise</h1>
       <div class="experience-details-container">
         <div class="about-containers">
+          <!-- GAME DEVELOPMENT SKILLS -->
           <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
+            <h2 class="experience-sub-title">Core Skills</h2>
             <div class="article-container">
               <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
+                <img src="./assets/checkmark.png" class="icon" />
                 <div>
-                  <h3>HTML</h3>
-                  <p>Experienced</p>
+                  <h3>Unity Engine</h3>
+                  <p>Advanced (2D/3D)</p>
                 </div>
               </article>
               <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
+                <img src="./assets/checkmark.png" class="icon" />
                 <div>
-                  <h3>CSS</h3>
-                  <p>Experienced</p>
+                  <h3>C# Programming</h3>
+                  <p>Expert</p>
                 </div>
               </article>
               <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
+                <img src="./assets/checkmark.png" class="icon" />
                 <div>
-                  <h3>SASS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>JavaScript</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>TypeScript</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Material UI</h3>
-                  <p>Intermediate</p>
+                  <h3>Game Architecture</h3>
+                  <p>SOLID Principles</p>
                 </div>
               </article>
             </div>
           </div>
+          <!-- TECHNICAL SKILLS -->
           <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
+            <h2 class="experience-sub-title">Technical Skills</h2>
             <div class="article-container">
               <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
+                <img src="./assets/checkmark.png" class="icon" />
                 <div>
-                  <h3>PostgreSQL</h3>
-                  <p>Basic</p>
+                  <h3>Git/GitHub</h3>
+                  <p>Version Control</p>
                 </div>
               </article>
               <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
+                <img src="./assets/checkmark.png" class="icon" />
                 <div>
-                  <h3>Node JS</h3>
-                  <p>Intermediate</p>
+                  <h3>SDK Integration</h3>
+                  <p>Firebase, AdMob</p>
                 </div>
               </article>
               <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
+                <img src="./assets/checkmark.png" class="icon" />
                 <div>
-                  <h3>Express JS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Git</h3>
-                  <p>Intermediate</p>
+                  <h3>Optimization</h3>
+                  <p>Performance Tuning</p>
                 </div>
               </article>
             </div>
@@ -251,85 +206,68 @@
       </div>
       <img
         src="./assets/arrow.png"
-        alt="Arrow icon"
         class="icon arrow"
         onclick="location.href='./#projects'"
       />
     </section>
+    <!-- UPDATED PROJECTS SECTION -->
     <section id="projects">
       <p class="section__text__p1">Browse My Recent</p>
       <h1 class="title">Projects</h1>
       <div class="experience-details-container">
         <div class="about-containers">
+          <!-- BAG FIGHT -->
           <div class="details-container color-container">
             <div class="article-container">
-              <img
-                src="./assets/project-1.png"
-                alt="Project 1"
-                class="project-img"
-              />
+              <img src="./assets/project-1.png" class="project-img" />
             </div>
-            <h2 class="experience-sub-title project-title">Project One</h2>
+            <h2 class="experience-sub-title project-title">Bag Fight</h2>
+            <p class="project-description">
+              Action game with unique abilities and customizable items using 
+              Scriptable Objects and Excel integration.
+            </p>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick="location.href='https://drive.google.com/drive/folders/1C8-BL2GifCjNRd6263EDTrnmOGJEqCPL'"
               >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
+                View Demo
               </button>
             </div>
           </div>
+          <!-- CONNECT SORT -->
           <div class="details-container color-container">
             <div class="article-container">
-              <img
-                src="./assets/project-2.png"
-                alt="Project 2"
-                class="project-img"
-              />
+              <img src="./assets/project-2.png" class="project-img" />
             </div>
-            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <h2 class="experience-sub-title project-title">Connect Sort</h2>
+            <p class="project-description">
+              248-style merge game with boosters and vibrant visuals.
+            </p>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick="location.href='https://drive.google.com/file/d/13DL3nRfPuIyJlFexUHjLin7ZjIMjsvM/view'"
               >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
+                View Project
               </button>
             </div>
           </div>
+          <!-- NUTS AND BOLTS -->
           <div class="details-container color-container">
             <div class="article-container">
-              <img
-                src="./assets/project-3.png"
-                alt="Project 3"
-                class="project-img"
-              />
+              <img src="./assets/project-3.png" class="project-img" />
             </div>
-            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <h2 class="experience-sub-title project-title">Nuts and Bolts</h2>
+            <p class="project-description">
+              Puzzle game with intricate mechanical challenges.
+            </p>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick="location.href='https://play.google.com/store/apps/details?id=com.wood.nuts.bolts.screw.puzzle'"
               >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
+                Play Store
               </button>
             </div>
           </div>
@@ -337,33 +275,30 @@
       </div>
       <img
         src="./assets/arrow.png"
-        alt="Arrow icon"
         class="icon arrow"
         onclick="location.href='./#contact'"
       />
     </section>
+    <!-- UPDATED CONTACT SECTION -->
     <section id="contact">
       <p class="section__text__p1">Get in Touch</p>
       <h1 class="title">Contact Me</h1>
       <div class="contact-info-upper-container">
         <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:examplemail@gmail.com">Example@gmail.com</a></p>
+          <img src="./assets/email.png" class="icon contact-icon email-icon" />
+          <p><a href="mailto:saad@saadasif.org">contact@saadasif.org</a></p>
         </div>
         <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+          <img src="./assets/linkedin.png" class="icon contact-icon" />
+          <p><a href="https://linkedin.com/in/saadasif">LinkedIn</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img src="./assets/github.png" class="icon contact-icon" />
+          <p><a href="https://github.com/saad20asif">GitHub</a></p>
         </div>
       </div>
     </section>
+    <!-- UPDATED FOOTER -->
     <footer>
       <nav>
         <div class="nav-links-container">
@@ -375,7 +310,7 @@
           </ul>
         </div>
       </nav>
-      <p>Copyright &#169; 2023 John Doe. All Rights Reserved.</p>
+      <p>Copyright &#169; 2023 Saad Asif. All Rights Reserved.</p>
     </footer>
     <script src="script.js"></script>
   </body>
