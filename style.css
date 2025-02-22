@@ -154,10 +154,6 @@ section {
   margin: 0 10rem;
   box-sizing: border-box;
   min-height: fit-content;
-
-  position: relative;
-  overflow: visible;
-  padding-bottom: 100px; /* Space for arrow */
 }
 
 .section-container {
@@ -296,7 +292,6 @@ section {
   position: absolute;
   right: -5rem;
   bottom: 2.5rem;
-  z-index: 1;
 }
 .details-container {
   padding: 1.5rem;
@@ -552,4 +547,50 @@ footer p {
   .experience-role {
     font-size: 1rem;
   }
+}
+
+
+
+
+:root {
+  --card-bg: #fff;
+  --border-color: #e0e0e0;
+  --accent-color: #4a90e2;
+  --text-color: #333;
+}
+
+/* Fix overlapping menu */
+.menu-links {
+  z-index: 1000;
+}
+
+/* Skills grid fix */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Project image fix */
+.project-img {
+  aspect-ratio: 16/9;
+  object-fit: cover;
+}
+
+/* Experience item alignment */
+.experience-icon {
+  margin-top: 0.4rem;
+}
+
+/* Arrow positioning fix */
+@media (max-width: 768px) {
+  .icon.arrow {
+    right: 1rem;
+    bottom: 1.5rem;
+  }
+}
+
+/* About section spacing */
+#about .title {
+  margin-bottom: 2rem;
 }
