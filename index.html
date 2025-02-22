@@ -4,13 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- CHANGED TITLE -->
     <title>Saad Asif | Unity Game Developer</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
   <body>
-    <!-- CHANGED NAVIGATION NAME -->
     <nav id="desktop-nav">
       <div class="logo">Saad Asif</div>
       <div>
@@ -32,7 +30,7 @@
         </div>
         <div class="menu-links">
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Skills</a></li>
           <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </div>
@@ -121,74 +119,76 @@
         onclick="location.href='./#experience'"
       />
     </section>
-    <!-- UPDATED EXPERIENCE SECTION -->
-    <section id="experience">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Skills & Expertise</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <!-- GAME DEVELOPMENT SKILLS -->
-          <div class="details-container">
-            <h2 class="experience-sub-title">Core Skills</h2>
-            <div class="article-container">
-              <article>
-                <img src="./assets/checkmark.png" class="icon" />
-                <div>
-                  <h3>Unity Engine</h3>
-                  <p>Advanced (2D/3D)</p>
-                </div>
-              </article>
-              <article>
-                <img src="./assets/checkmark.png" class="icon" />
-                <div>
-                  <h3>C# Programming</h3>
-                  <p>Expert</p>
-                </div>
-              </article>
-              <article>
-                <img src="./assets/checkmark.png" class="icon" />
-                <div>
-                  <h3>Game Architecture</h3>
-                  <p>SOLID Principles</p>
-                </div>
-              </article>
-            </div>
-          </div>
-          <!-- TECHNICAL SKILLS -->
-          <div class="details-container">
-            <h2 class="experience-sub-title">Technical Skills</h2>
-            <div class="article-container">
-              <article>
-                <img src="./assets/checkmark.png" class="icon" />
-                <div>
-                  <h3>Git</h3>
-                  <p>Version Control</p>
-                </div>
-              </article>
-              <article>
-                <img src="./assets/checkmark.png" class="icon" />
-                <div>
-                  <h3>SDK Integration</h3>
-                  <p>Firebase, AdMob</p>
-                </div>
-              </article>
-              <article>
-                <img src="./assets/checkmark.png" class="icon" />
-                <div>
-                  <h3>Optimization</h3>
-                  <p>Performance Tuning</p>
-                </div>
-              </article>
-            </div>
-          </div>
+  <!-- UPDATED EXPERIENCE SECTION -->
+<section id="experience">
+  <p class="section__text__p1">Explore My Journey</p>
+  <h1 class="title">Professional Experience</h1>
+  <div class="experience-container">
+    <!-- Hazel Mobile Experience -->
+    <div class="experience-card">
+      <div class="experience-header">
+        <div class="experience-logo">
+          <img src="./assets/HazelMobileLogo.png" alt="Hazel Mobile Logo" />
+        </div>
+        <div class="experience-info">
+          <h2 class="experience-company">Hazel Mobile</h2>
+          <h3 class="experience-role">Senior Unity Developer</h3>
+          <p class="experience-duration">Mar 2021 - Present</p>
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
-    </section>
+      <div class="experience-content">
+        <div class="experience-item">
+          <div class="experience-icon"><img src="./assets/checkmark.png" class="icon" /></div>
+          <p class="experience-text">Developed 2D puzzle, action, and strategy games for Android, focusing on engaging player experiences. Designed scalable game architectures using SOLID principles, OOP, and state machines with ScriptableObjects for smooth transitions and efficient updates.</p>
+        </div>
+        <div class="experience-item">
+          <div class="experience-icon"><img src="./assets/checkmark.png" class="icon" /></div>
+          <p class="experience-text">Optimized performance for smoother gameplay and higher user satisfaction. Integrated SDKs (Firebase, AppLovin, AdMob) and mediation platforms to maximize ad revenue.</p>
+        </div>
+        <div class="experience-item">
+          <div class="experience-icon"><img src="./assets/checkmark.png" class="icon" /></div>
+          <p class="experience-text">Exploring LiveOps strategies for real-time updates, in-game events, and user retention optimizations. Learning data analytics to craft long-term strategies and improve engagement.</p>
+        </div>
+        <div class="experience-item">
+          <div class="experience-icon"><img src="./assets/checkmark.png" class="icon" /></div>
+          <p class="experience-text">Leveraging AI tools to streamline workflows, boost productivity, and optimize development processes.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Invogue Technologies Experience -->
+    <div class="experience-card">
+      <div class="experience-header">
+        <div class="experience-logo">
+          <img src="./assets/InvogueLogo.jpeg" alt="Invogue Technologies Logo" />
+        </div>
+        <div class="experience-info">
+          <h2 class="experience-company">Invogue Technologies</h2>
+          <h3 class="experience-role">Unity Developer</h3>
+          <p class="experience-duration">Apr 2021 - Mar 2023</p>
+        </div>
+      </div>
+      <div class="experience-content">
+        <div class="experience-item">
+          <div class="experience-icon"><img src="./assets/checkmark.png" class="icon" /></div>
+          <p class="experience-text">Developed 3D hyper-casual game prototypes for Android and iOS, collaborating with artists and designers to achieve high-quality visuals and engaging gameplay.</p>
+        </div>
+        <div class="experience-item">
+          <div class="experience-icon"><img src="./assets/checkmark.png" class="icon" /></div>
+          <p class="experience-text">Designed and implemented innovative game mechanics using OOP principles and algorithmic solutions, ensuring optimal performance and smooth gameplay.</p>
+        </div>
+        <div class="experience-item">
+          <div class="experience-icon"><img src="./assets/checkmark.png" class="icon" /></div>
+          <p class="experience-text">Created immersive in-game cutscenes using Unity Timeline, enhancing storytelling and player engagement with polished visual narratives.</p>
+        </div>
+        <div class="experience-item">
+          <div class="experience-icon"><img src="./assets/checkmark.png" class="icon" /></div>
+          <p class="experience-text">Optimized game performance through efficient coding, reducing load times and improving frame rates for seamless gameplay across various devices.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
     <!-- UPDATED PROJECTS SECTION -->
     <section id="projects">
       <p class="section__text__p1">Browse My Recent</p>
