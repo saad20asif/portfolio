@@ -31,7 +31,8 @@
         </div>
         <div class="menu-links">
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#skill" onclick="toggleMenu()">Skills</a></li>
           <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </div>
@@ -105,11 +106,15 @@
           </div>
           <!-- ADDED ABOUT ME TEXT FROM RESUME -->
           <div class="text-container">
-            <p>Hi, I’m Saad, a passionate game developer who thrives on crafting immersive experiences. My journey into coding wasn’t love at first sight—back in my computer science days, I found algorithms dry and uninspiring. But everything changed when I discovered game development. Suddenly, physics wasn’t just equations—it was ragdolls flying gloriously after a grenade blast. Math became enemy AI pathfinding that made me yell, “Oh, you sneaky bot!” at my screen. Even art clicked—I finally understood why shading a 3D model feels like giving it a soul.</p>
+            <p>Hi, I’m Saad, a game developer who loves turning code into experiences that make people laugh, think, or yell “WHOA!” at their screens. I didn’t always love coding—my college classes felt too abstract—but game development changed everything. Suddenly, math became a tool to make enemies chase players in clever ways, and art felt like giving personality to pixels.</p><br> 
           
-            <p>Now, I’m the kind of developer who gets genuinely hyped about designing clean, scalable game architectures, tackling “impossible” bugs with a “hold my energy drink” mindset, and obsessing over game feel—because perfecting a single jump animation’s squash and stretch is totally worth it. I love falling into flow states where hours disappear in minutes, every line of code feels like adding brushstrokes to a masterpiece, and my heart sparks with joy when players ask, “Wait, how did you do that?!”</p>
+            <p>I spend my days building systems that work smoothly (even when games get crazy), fixing bugs that seem impossible (I will out-stubborn them), and tweaking tiny details—like how a character jumps—until it feels just right. I play games every day, big and small, to learn what makes them fun. Why does one game feel addictive? Why does another feel balanced? I take notes, experiment, and steal ideas (shh) to make my own work better.</p><br> 
           
-            <p>The best part? I’m still that kid who dreams of making games so engaging that players forget to check their phones. I thrive in collaborative environments where artists, designers, and developers come together to create magic. Every project is a playground for wild ideas, and I believe that even hyper-casual games deserve soul. Let’s build something that doesn’t just entertain but leaves players with that electric, “I NEED to show this to someone” feeling.</p>
+            <p>My favorites to create? Puzzle games where players feel smart for solving challenges, roguelikes where every playthrough tells a new story, and simple games that hide surprising depth. Outside of coding, I’m a huge sports fan—I’ve played cricket for years and would love to someday make a game that captures the thrill of teamwork and competition, even if it’s just a small passion project.</p><br> 
+          
+            <p>I believe the best games come from teams where everyone’s voice matters. Artists, designers, players—we all bring ideas to the table. My dream is to make games that feel alive, where players forget the real world for a while. Not just flashy graphics or cool mechanics, but moments that make you call a friend and say, “You HAVE to try this.”</p><br> 
+          
+            <p>If you’re looking for someone who cares as much about the tiny details (like menu sounds) as the big picture, who’ll cheerfully grind through problems, and who still gets excited when code finally works… let’s chat!</p>
           </div>
           
         </div>
@@ -144,7 +149,16 @@
         </div>
         <div class="experience-item">
           <div class="experience-icon"><img src="./assets/checkmark.png" class="icon" /></div>
+          <p class="experience-text">Focusing on Game Feel by applying animation principles, including squash and stretch, anticipation, and follow-through, along with responsive particles, dynamic effects, sound feedback, haptics, and shaders, ensuring every action feels impactful and immersive.</p>
+        </div>
+        <div class="experience-item">
+          <div class="experience-icon"><img src="./assets/checkmark.png" class="icon" /></div>
           <p class="experience-text">Optimized performance for smoother gameplay and higher user satisfaction. Integrated SDKs (Firebase, AppLovin, AdMob) and mediation platforms to maximize ad revenue.</p>
+        </div>
+        <div class="experience-item">
+          <div class="experience-icon"><img src="./assets/checkmark.png" class="icon" /></div>
+          <p class="experience-text">Created testable and configurable code using ScriptableObjects, Excel files, and SRDebugger, empowering game
+            designers to make seamless adjustments without modifying the code.</p>
         </div>
         <div class="experience-item">
           <div class="experience-icon"><img src="./assets/checkmark.png" class="icon" /></div>
@@ -195,65 +209,36 @@
     onclick="location.href='./#skill'"
   />
 </section>
-<!-- UPDATED Skills SECTION -->
+<!-- UNIFIED SKILLS SECTION -->
 <section id="skill">
   <p class="section__text__p1">Explore My</p>
-  <h1 class="title">Skills & Expertise</h1>
-  <div class="skill-details-container">
-    <div class="about-containers">
-      <!-- GAME DEVELOPMENT SKILLS -->
-      <div class="details-container">
-        <h2 class="skill-sub-title">Core Skills</h2>
-        <div class="article-container">
-          <article>
-            <img src="./assets/checkmark.png" class="icon" />
-            <div>
-              <h3>Unity Engine</h3>
-              <p>Advanced (2D/3D)</p>
-            </div>
-          </article>
-          <article>
-            <img src="./assets/checkmark.png" class="icon" />
-            <div>
-              <h3>C# Programming</h3>
-              <p>Expert</p>
-            </div>
-          </article>
-          <article>
-            <img src="./assets/checkmark.png" class="icon" />
-            <div>
-              <h3>Game Architecture</h3>
-              <p>SOLID Principles</p>
-            </div>
-          </article>
-        </div>
+  <h1 class="title">Technical Skills</h1>
+  <div class="skills-container">
+    <div class="skills-grid">
+      <div class="skill-item">
+        <img src="./assets/checkmark.png" class="icon" />
+        <h3>Unity Engine</h3>
+        <p>2D/3D Development • SOLID Architecture • Shader Graph</p>
       </div>
-      <!-- TECHNICAL SKILLS -->
-      <div class="details-container">
-        <h2 class="skill-sub-title">Technical Skills</h2>
-        <div class="article-container">
-          <article>
-            <img src="./assets/checkmark.png" class="icon" />
-            <div>
-              <h3>Git</h3>
-              <p>Version Control</p>
-            </div>
-          </article>
-          <article>
-            <img src="./assets/checkmark.png" class="icon" />
-            <div>
-              <h3>SDK Integration</h3>
-              <p>Firebase, AdMob</p>
-            </div>
-          </article>
-          <article>
-            <img src="./assets/checkmark.png" class="icon" />
-            <div>
-              <h3>Optimization</h3>
-              <p>Performance Tuning</p>
-            </div>
-          </article>
-        </div>
+      <div class="skill-item">
+        <img src="./assets/checkmark.png" class="icon" />
+        <h3>C# Expertise</h3>
+        <p>OOP Patterns • Solid Principles • LINQ • Async Programming • Memory Management</p>
+      </div>
+      <div class="skill-item">
+        <img src="./assets/checkmark.png" class="icon" />
+        <h3>Performance Optimization</h3>
+        <p>GPU Instancing • Object Pooling • Dynamic Resources Loading • Profiling</p>
+      </div>
+      <div class="skill-item">
+        <img src="./assets/checkmark.png" class="icon" />
+        <h3>Development Tools</h3>
+        <p>Git • Asana • Firebase • AdMob • AppLovin • Jenkins</p>
+      </div>
+      <div class="skill-item">
+        <img src="./assets/checkmark.png" class="icon" />
+        <h3>AI Tools</h3>
+        <p>Chatgpt • Deepseek • Github Copilot • Midjourney • Leonardo AI</p>
       </div>
     </div>
   </div>
