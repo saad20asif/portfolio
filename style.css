@@ -594,3 +594,46 @@ footer p {
 #about .title {
   margin-bottom: 2rem;
 }
+
+
+
+
+
+
+
+
+
+
+
+/* SKILLS SECTION FIX */
+.skills-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.skill-item {
+  display: grid;
+  grid-template-areas: 
+    "icon heading"
+    "content content";
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.skill-item img {
+  grid-area: icon;
+  width: 24px;
+  height: 24px;
+}
+
+.skill-item h3 {
+  grid-area: heading;
+  margin: 0;
+}
+
+.skill-item p {
+  grid-area: content;
+  margin: 0;
+}
