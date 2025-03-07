@@ -114,3 +114,33 @@
     left: 0; */
   }
 }
+
+
+
+
+
+@media (max-width: 768px) {
+  .recommendations-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .recommendation-card {
+    padding: 1.2rem;
+  }
+  
+  .recommendation-img {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .recommendation-header {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .recommendation-info {
+    text-align: center;
+  }
+}
