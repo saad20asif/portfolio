@@ -1,33 +1,45 @@
-/* GENERAL */
+/* ==================================================
+   GENERAL STYLES
+   - Import fonts and set basic element styles
+================================================== */
 
+/* Import Google Font */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
+/* Reset margins and paddings for all elements */
 * {
   margin: 0;
   padding: 0;
 }
 
+/* Set the default font for the body */
 body {
   font-family: "Poppins", sans-serif;
 }
 
+/* Enable smooth scrolling */
 html {
   scroll-behavior: smooth;
 }
 
+/* Set default paragraph text color */
 p {
   color: rgb(85, 85, 85);
 }
 
-/* TRANSITION */
-
+/* ==================================================
+   TRANSITION STYLES
+   - Apply smooth transitions to links and buttons
+================================================== */
 a,
 .btn {
   transition: all 300ms ease;
 }
 
-/* DESKTOP NAV */
-
+/* ==================================================
+   DESKTOP NAVIGATION STYLES
+   - Layout and styling for desktop navigation
+================================================== */
 nav,
 .nav-links {
   display: flex;
@@ -45,6 +57,7 @@ nav {
   font-size: 1.5rem;
 }
 
+/* Link styles */
 a {
   color: black;
   text-decoration: none;
@@ -58,6 +71,7 @@ a:hover {
   text-decoration-color: rgb(181, 181, 181);
 }
 
+/* Logo styling */
 .logo {
   font-size: 2rem;
 }
@@ -66,8 +80,12 @@ a:hover {
   cursor: default;
 }
 
-/* HAMBURGER MENU */
+/* ==================================================
+   HAMBURGER MENU STYLES (MOBILE)
+   - Styles for the mobile navigation menu
+================================================== */
 
+/* Hide hamburger nav by default (for desktop) */
 #hamburger-nav {
   display: none;
 }
@@ -77,6 +95,7 @@ a:hover {
   display: inline-block;
 }
 
+/* Hamburger icon styling */
 .hamburger-icon {
   display: flex;
   flex-direction: column;
@@ -86,6 +105,7 @@ a:hover {
   cursor: pointer;
 }
 
+/* Individual hamburger lines */
 .hamburger-icon span {
   width: 100%;
   height: 2px;
@@ -93,6 +113,7 @@ a:hover {
   transition: all 0.3 ease-in-out;
 }
 
+/* Mobile menu links container */
 .menu-links {
   position: absolute;
   top: 100%;
@@ -104,6 +125,7 @@ a:hover {
   transition: all 0.3 ease-in-out;
 }
 
+/* Mobile menu link styling */
 .menu-links a {
   display: block;
   padding: 10px;
@@ -118,10 +140,12 @@ a:hover {
   list-style: none;
 }
 
+/* Open state for the mobile menu */
 .menu-links.open {
   max-height: 300px;
 }
 
+/* Transformations for hamburger icon when open */
 .hamburger-icon.open span:first-child {
   transform: rotate(45deg) translate(10px, 5px);
 }
@@ -134,6 +158,7 @@ a:hover {
   transform: rotate(-45deg) translate(10px, -5px);
 }
 
+/* The following repeated rules ensure proper default state */
 .hamburger-icon span:first-child {
   transform: none;
 }
@@ -146,8 +171,10 @@ a:hover {
   transform: none;
 }
 
-/* SECTIONS */
-
+/* ==================================================
+   SECTION STYLES
+   - General styling for all sections of the page
+================================================== */
 section {
   padding-top: 4vh;
   min-height: 96vh;
@@ -156,12 +183,15 @@ section {
   min-height: fit-content;
 }
 
+/* Container for sections */
 .section-container {
   display: flex;
 }
 
-/* PROFILE SECTION */
-
+/* ==================================================
+   PROFILE SECTION STYLES
+   - Layout for the profile (hero) section
+================================================== */
 #profile {
   display: flex;
   justify-content: center;
@@ -169,6 +199,7 @@ section {
   height: 80vh;
 }
 
+/* Container for the profile picture */
 .section__pic-container {
   display: flex;
   height: 400px;
@@ -176,6 +207,7 @@ section {
   margin: auto 0;
 }
 
+/* Container for profile text */
 .section__text {
   align-self: center;
   text-align: center;
@@ -185,6 +217,7 @@ section {
   font-weight: 600;
 }
 
+/* Specific text styling */
 .section__text__p1 {
   text-align: center;
 }
@@ -194,11 +227,13 @@ section {
   margin-bottom: 1rem;
 }
 
+/* Title styling */
 .title {
   font-size: 3rem;
   text-align: center;
 }
 
+/* Social icons container */
 #socials-container {
   display: flex;
   justify-content: center;
@@ -206,16 +241,19 @@ section {
   gap: 1rem;
 }
 
-
-/* ICONS */
-
+/* ==================================================
+   ICON STYLES
+   - Cursor and sizing for icons
+================================================== */
 .icon {
   cursor: pointer;
   height: 2rem;
 }
 
-/* BUTTONS */
-
+/* ==================================================
+   BUTTON STYLES
+   - Layout and appearance of buttons
+================================================== */
 .btn-container {
   display: flex;
   justify-content: center;
@@ -230,6 +268,7 @@ section {
   border-radius: 2rem;
 }
 
+/* Button border styles */
 .btn-color-1,
 .btn-color-2 {
   border: rgb(53, 53, 53) 0.1rem solid;
@@ -240,6 +279,7 @@ section {
   cursor: pointer;
 }
 
+/* Hover effects for buttons */
 .btn-color-1,
 .btn-color-2:hover {
   background: rgb(53, 53, 53);
@@ -262,8 +302,10 @@ section {
   gap: 1rem;
 }
 
-/* ABOUT SECTION */
-
+/* ==================================================
+   ABOUT SECTION STYLES
+   - Styles specific to the About Me section
+================================================== */
 #about {
   position: relative;
   overflow: hidden;
@@ -275,6 +317,7 @@ section {
   margin-top: 2rem;
 }
 
+/* Flex container for details */
 .about-details-container {
   justify-content: center;
   flex-direction: column;
@@ -285,15 +328,19 @@ section {
   display: flex;
 }
 
+/* Styling for the about image */
 .about-pic {
   border-radius: 2rem;
 }
 
+/* Positioning for the arrow element */
 .arrow {
   position: absolute;
   right: -5rem;
   bottom: 2.5rem;
 }
+
+/* Container styling for details boxes */
 .details-container {
   padding: 1.5rem;
   flex: 1;
@@ -304,6 +351,7 @@ section {
   text-align: center;
 }
 
+/* Adjust spacing inside section container */
 .section-container {
   gap: 4rem;
   height: 80%;
@@ -315,8 +363,10 @@ section {
   margin: auto 0;
 }
 
-/* EXPERIENCE SECTION */
-
+/* ==================================================
+   EXPERIENCE SECTION STYLES
+   - General styling for the Experience section layout
+================================================== */
 #experience {
   position: relative;
 }
@@ -328,12 +378,14 @@ section {
   margin-bottom: 2rem;
 }
 
+/* Container for experience details */
 .experience-details-container {
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
 
+/* Article container styling */
 .article-container {
   display: flex;
   text-align: initial;
@@ -343,6 +395,7 @@ section {
   justify-content: space-around;
 }
 
+/* Styling for article elements */
 article {
   display: flex;
   width: 10rem;
@@ -354,8 +407,10 @@ article .icon {
   cursor: default;
 }
 
-/* PROJECTS SECTION */
-
+/* ==================================================
+   PROJECTS SECTION STYLES
+   - Styles for the Projects section
+================================================== */
 #projects {
   position: relative;
 }
@@ -381,8 +436,10 @@ article .icon {
   border-color: rgb(163, 163, 163);
 }
 
-/* CONTACT */
-
+/* ==================================================
+   CONTACT SECTION STYLES
+   - Layout and styling for the Contact section
+================================================== */
 #contact {
   display: flex;
   justify-content: center;
@@ -421,8 +478,10 @@ article .icon {
   height: 2.5rem;
 }
 
-/* FOOTER SECTION */
-
+/* ==================================================
+   FOOTER SECTION STYLES
+   - Footer layout and styling
+================================================== */
 footer {
   height: 26vh;
   margin: 0 1rem;
@@ -432,7 +491,10 @@ footer p {
   text-align: center;
 }
 
-/* EXPERIENCE SECTION */
+/* ==================================================
+   EXPERIENCE CARD STYLES
+   - Detailed card layout for experience items
+================================================== */
 .experience-container {
   display: grid;
   gap: 2rem;
@@ -522,7 +584,10 @@ footer p {
   color: var(--text-color);
 }
 
-/* RESPONSIVE DESIGN */
+/* ==================================================
+   RESPONSIVE DESIGN ADJUSTMENTS
+   - Styles for screens 768px or less
+================================================== */
 @media (max-width: 768px) {
   .experience-container {
     grid-template-columns: 1fr;
@@ -550,9 +615,10 @@ footer p {
   }
 }
 
-
-
-
+/* ==================================================
+   CSS VARIABLES
+   - Global variables for theme colors
+================================================== */
 :root {
   --card-bg: #fff;
   --border-color: #e0e0e0;
@@ -560,30 +626,35 @@ footer p {
   --text-color: #333;
 }
 
-/* Fix overlapping menu */
+/* ==================================================
+   FIXES & ADJUSTMENTS
+   - Additional tweaks to address layout issues
+================================================== */
+
+/* Fix overlapping menu by ensuring high stacking order */
 .menu-links {
   z-index: 1000;
 }
 
-/* Skills grid fix */
+/* Skills grid layout */
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1.5rem;
 }
 
-/* Project image fix */
+/* Ensure project images maintain aspect ratio and cover the container */
 .project-img {
   aspect-ratio: 16/9;
   object-fit: cover;
 }
 
-/* Experience item alignment */
+/* Adjust experience item alignment */
 .experience-icon {
   margin-top: 0.4rem;
 }
 
-/* Arrow positioning fix */
+/* Arrow positioning fix for mobile screens */
 @media (max-width: 768px) {
   .icon.arrow {
     right: 1rem;
@@ -591,22 +662,15 @@ footer p {
   }
 }
 
-/* About section spacing */
+/* About section heading spacing */
 #about .title {
   margin-bottom: 2rem;
 }
 
-
-
-
-
-
-
-
-
-
-
-/* SKILLS SECTION FIX */
+/* ==================================================
+   SKILLS SECTION FIX
+   - Grid and item layout for skills display
+================================================== */
 .skills-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -639,22 +703,16 @@ footer p {
   margin: 0;
 }
 
-
-
-
-
-
-
-
-
-
-
-/* Recommendations Section */
+/* ==================================================
+   RECOMMENDATIONS SECTION STYLES
+   - Layout and card styles for recommendations
+================================================== */
 #recommendations {
   position: relative;
   padding: 4rem 0;
 }
-/* Recommendations Section Heading */
+
+/* Heading spacing for recommendations section */
 #recommendations .section__text__p1 {
   margin-bottom: 1.5rem; /* Adjust this value as needed */
 }
@@ -662,6 +720,8 @@ footer p {
 #recommendations .title {
   margin-bottom: 3rem; /* Increase this value to add more space below the heading */
 }
+
+/* Grid layout for recommendation cards */
 .recommendations-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -671,6 +731,7 @@ footer p {
   padding: 0 1rem;
 }
 
+/* Individual recommendation card styling */
 .recommendation-card {
   background: white;
   border-radius: 15px;
@@ -679,6 +740,7 @@ footer p {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
 }
 
+/* Recommendation header layout */
 .recommendation-header {
   display: flex;
   align-items: center;
@@ -694,6 +756,7 @@ footer p {
   border: 2px solid #4a90e2;
 }
 
+/* Recommendation information styling */
 .recommendation-info h3 {
   margin: 0;
   color: #333;
@@ -707,6 +770,7 @@ footer p {
   line-height: 1.3;
 }
 
+/* Recommendation text styling */
 .recommendation-text p {
   color: #444;
   line-height: 1.6;
@@ -714,10 +778,10 @@ footer p {
   margin: 0;
 }
 
-
-
-
-/* LinkedIn Button Styles */
+/* ==================================================
+   LINKEDIN BUTTON STYLES
+   - Specific styles for LinkedIn button and icon
+================================================== */
 .linkedin-btn {
   display: flex;
   align-items: center;
