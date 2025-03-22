@@ -1,8 +1,24 @@
 /* =====================
    RESPONSIVE DESIGN
    ===================== */
+   .project-about-containers {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 20px; 
+}
 
+
+
+.project-description {
+    flex-grow: 1; /* Ensures descriptions take equal space */
+    min-height: 120px; /* Adjust based on content */
+}
+   
 /* Large Desktops (1600px and below) */
+.text-container p {
+  line-height: 1.8; /* Adds space between lines (adjust as needed) */
+  margin-bottom: 15px; /* Adds space between paragraphs */
+}
 @media (max-width: 1600px) {
   #experience {
     margin-top: 10rem; /* Add spacing above experience section */
